@@ -1,0 +1,23 @@
+server:
+  port: 9050
+  servlet.context-path: /account
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:9010/pgvector-test
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+stripe:
+  api:
+    secret: pk_test_51SvMV6FFbuIaDFt3GjBz83fDRzPuuISAzGW5w5EJn45S8C8RkYtDHpaQVoySjZjpqyUX8NZ3qkRkjGpDEmsXklEw00H6LQ6HC5
+  webhook:
+    secret: sk_test_51SvMV6FFbuIaDFt3rGt2AYzTdULxWE8MbWumkfuFCPxPvbCi6DVH7VClf54Rk7bV95bFsNLych33WAZ6S6cUho4b00FDnhxjCk 
+
+
+stripe:
+  api:
+    secret: ${STRIPE_API_KEY}
+  webhook:
+    secret: ${STRIPE_WEBHOOK_SECRET}
