@@ -4,7 +4,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:9010/lovable-workspace-db
+    url: jdbc:postgresql://localhost:9010/pgvector-test
     username: user
     password: password
     driver-class-name: org.postgresql.Driver
